@@ -7,3 +7,5 @@ export {default as ReserveTable} from './reserveTable/ReserveTable';
 export {default as Recommended} from './recommended/Recommended';
 export {default as Menu} from './menu/Menu';
 export {default as Blog} from './blog/Blog';
+export {default as Reviews} from './reviews/Reviews';
+export {default as Subscribe} from './subscribe/Subscribe';

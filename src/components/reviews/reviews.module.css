@@ -1,0 +1,84 @@
+.reviews{
+    margin: 0 2.5rem;
+    position: relative;
+    /* background-color: green; */
+    padding: 2.5rem 5rem;
+    margin-bottom: 5rem;
+    border-radius: 1.5rem;
+    background-image: url('../../assets/customer_review_background.svg');
+    background-position: center;
+    background-size: cover;
+    border: .15rem outset #A8715C;
+    border-top: 0;
+    border-right: 0;
+}
+.reviews h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    text-align: center;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    width: 100%;
+}
+.reviewContainer{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.reviewContainer::-webkit-scrollbar{
+    height: 0;
+}
+.reviewTile{
+    min-width: 35rem;
+    background: #66371dbf;
+    backdrop-filter: blur(17.5px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    border: .25rem outset #A8715C;
+    border-right: 0;
+    border-bottom: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    position: relative;
+}
+/*.reviewTile::before{
+    content: url('../../assets/doubleQuotes.svg'); FIXME:Add Quotes
+}*/
+.reviewTile img{
+    height: 10rem;
+}
+.reviewTile p{
+    color: #F0E3D0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+}
+.reviewTile p.feedback{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.reviewTile span.star{
+    color: #FFD700;
+    font-size: 2.5rem;
+}
+.leftArrow,.rightArrow{
+    height: 2.5rem;
+    position: absolute;
+    top: calc(50% - 1.25rem);
+    cursor: pointer;
+}
+.leftArrow{
+    transform: rotate(180deg);
+    left: 2rem;
+}
+.rightArrow{
+    right: 2rem;
+}

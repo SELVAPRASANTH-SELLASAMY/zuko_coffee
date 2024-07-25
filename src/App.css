@@ -4,3 +4,10 @@ section,header,footer{
 section{
     margin-bottom: 5rem;
 }
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: #A8715C;
+}
