@@ -1,0 +1,24 @@
+.services h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    text-align: center;
+}
+.services .service_tile_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.services .service_tile_container .service_tile{
+    background-color: #54372A;
+    color: #F8E4BE;
+    text-align: center;
+    padding: 3rem 0;
+    border-radius: 2rem;
+    width: 14rem;
+    font-size: 1.25rem;
+}
+.services .service_tile_container .service_tile img{
+    height: 10rem;
+}

@@ -1,0 +1,72 @@
+.recommended h2{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+}
+.recommendation_container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 3rem;
+}
+span.information{
+    font-size: 1rem;
+    color: #A48072;
+    border: .1rem solid #A48072;
+    border-radius: 50px;
+    height: 1.75rem;
+    width: 1.75rem;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.recommended_item{
+    background: #ad714a59;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.recommended_item img.coffeeImage{
+    width: 100%;
+}
+.recommended_item p{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 1rem 0;
+    background: #ffffff26;
+    color: #ffffff;
+}
+.recommended_item strong{
+    position: relative;
+    margin-right: 1rem;
+}
+.recommended_item strong::after{
+    content: url('../../assets/pipe.svg');
+    position: absolute;
+    right: -.5rem;
+    top: 0;
+}
+img.addTocartimage{
+    height: 2.5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 4.5rem;
+    cursor: pointer;
+}
+.arrowButtons{
+    display: flex;
+    gap: .5rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+}
+.arrowButtons img{
+    cursor: pointer;
+    height: 3rem;
+}
+.arrowButtons .RightArrowButton{
+    transform: rotate(180deg);
+}

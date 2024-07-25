@@ -1,0 +1,67 @@
+.menu{
+    display: grid;
+    place-content: center;
+}
+.menu h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    text-align: center;
+}
+.menuItems{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem 30rem;
+    background-image: url('../../assets/mensEnjoyCoffee.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5rem 0;
+}
+.menuItems p{
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 7rem;
+    position: relative;
+}
+.menuItems p:nth-child(even){
+    flex-direction: row-reverse;
+}
+.menuItems p::after{
+    content: url('../../assets/menuItemStyle.svg');
+    position: absolute;
+    width: 100%;
+    bottom: -2.5rem;
+    left: -1rem;
+}
+.menuItems p:nth-child(even)::after{
+    transform: rotate(180deg);
+    left: unset;
+    right: -1rem;
+    bottom: -2.5rem;
+}
+.menuItems p span{
+    font-size: 1.5rem;
+}
+.menuItems p:nth-child(1),.menuItems p:nth-child(7){
+    right: -3rem;
+}
+.menuItems p:nth-child(2),.menuItems p:nth-child(8){
+    left: -3rem;
+}
+.ourMenuButton{
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.ourMenuButton p{
+    font-size: 1.5rem;
+    color: #F8E4BE;
+}
+.ourMenuButton img{
+    height: 1.25rem;
+}

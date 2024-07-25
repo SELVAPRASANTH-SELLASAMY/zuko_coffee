@@ -1,0 +1,75 @@
+.storyContainer{
+    height: fit-content;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 2.5rem;
+    padding-top: 2.5rem;
+    scroll-snap-type: x mandatory;
+}
+.storyContainer::-webkit-scrollbar{
+    height: 0;
+}
+.storyFrame{
+    height: fit-content;
+    min-width: 100%;
+    background-color: #744F40;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    position: relative;
+    border: .5rem ridge #54372B;
+    border-right: unset;
+    border-bottom: unset;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.storyFrame img{
+    height: 25rem;
+    position: absolute;
+    top: -3.5rem;
+    left: 5rem;
+}
+.storyFrame h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    position: absolute;
+    right: 3rem;
+    top: -3rem;
+}
+.storyFrame p{
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-left: 25rem;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 6;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+.moreButton{
+    font-size: 1.25rem;
+    background-color: unset;
+    border: none;
+    color: #ffffff;
+    text-decoration: underline;
+    float: right;
+    cursor: pointer;
+}
+.pageIndicator{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+}
+.pageIndicator .circle{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50px;
+    background-color: #744F40;
+}
+.pageIndicator .circle:first-child{
+    background-color: #D7B0A0;
+}

@@ -1,0 +1,111 @@
+.reserveTable{
+    background: #ad714a59;
+    backdrop-filter: blur(2px);
+    position: relative;
+    margin-top: 2rem; /*TODO: In media query adjust margin as h2/2*/
+    display: flex;
+    justify-content: space-around;
+}
+.reserveTable img.reserveImage{
+    height: 25rem;
+}
+.reserveTable h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: -3rem;
+}
+.reserveTable form{
+    width: 40%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-areas: "date date"
+                         "time guest"
+                         "name name"
+                         "phone phone"
+                         "email button";
+    gap: 0 1rem;
+    align-items: center;
+}
+.reserveTable form #input_field{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.reserveTable form #input_field label{
+    font-size: 1.25rem;
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    color: #9D8781;
+    position: absolute;
+    top: 18%;
+    left: 1rem;
+    text-transform: capitalize;
+    pointer-events: none;
+}
+.reserveTable form #input_field label img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.reserveTable form #input_field input{
+    color: #9D8781;
+    caret-color: #9D8781;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    outline: none;
+}
+.reserveTable form #input_field input:valid ~ label{
+    display: none;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.reserveTable form #input_field input:focus{
+    outline: .15rem solid #F7E1BC;
+}
+.reserveTable button.reserve_button{
+    font-size: 1.25rem;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    background-color: #f7e1bb4d;
+    border: .1rem solid #F7E1BC;
+    border-radius: 50px;
+    color: #F7E1BC;
+    grid-area: button;
+    width: fit-content;
+    height: fit-content;
+}
+.reserveTable button.reserve_button:focus{
+    outline: .15rem solid #F7E1BC;
+}
+.reserveTable .date{
+    grid-area: date;
+}
+.reserveTable .time{
+    grid-area: time;
+}
+.reserveTable .guest{
+    grid-area: guest;
+}
+.reserveTable .name{
+    grid-area: name;
+}
+.reserveTable .phone{
+    grid-area: phone;
+}
+.reserveTable .email{
+    grid-area: email;
+}
+.reserveTable form button{
+    grid-area: button;
+}

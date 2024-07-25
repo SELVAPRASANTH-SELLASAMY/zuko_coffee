@@ -1,0 +1,53 @@
+.offerInfo{
+    position: relative;
+    background: rgba(173, 113, 74, 0.35);
+    backdrop-filter: blur(2px);
+    border-radius: 35px;
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-areas: "heading_3 image"
+                         "para image"
+                         "button image";
+    align-items: center;
+}
+.offer h2{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+    color: #F8E4BE;
+    position: absolute;
+    left: 3rem;
+    top: -3rem;
+}
+.offer span{
+    font-size: 3rem;
+}
+.offer h3{
+    font-size: 2rem;
+    color: #F8E4BE;
+    font-weight: 100;
+    grid-area: heading_3;
+    grid-row: span;
+}
+.offer p{
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    grid-area: para;
+}
+.offer img{
+    height: 20rem;
+    grid-area: image;
+}
+.offer button{
+    font-size: 1.25rem;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    background-color: #f7e1bb4d;
+    border: .1rem solid #F7E1BC;
+    border-radius: 50px;
+    color: #F7E1BC;
+    grid-area: button;
+    width: fit-content;
+    height: fit-content;
+}
