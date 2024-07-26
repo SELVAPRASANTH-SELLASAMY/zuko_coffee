@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Hero, OurStory, Services, Offer, ReserveTable, Recommended, Menu, Blog, Reviews, Subscribe } from './components';
+import { Navbar, Hero, OurStory, Services, Offer, ReserveTable, Recommended, Menu, Blog, Reviews, Subscribe, Footer } from './components';
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
         <Reviews/>
         <Subscribe/>
       </main>
+      <Footer/>
     </div>
   );
 }
