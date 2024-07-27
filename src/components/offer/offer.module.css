@@ -11,7 +11,7 @@
     align-items: center;
 }
 .offer h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     position: absolute;
@@ -19,10 +19,10 @@
     top: -3rem;
 }
 .offer span{
-    font-size: 3rem;
+    font-size: var(--LARGE);
 }
 .offer h3{
-    font-size: 2rem;
+    font-size: var(--MEDIUM);
     color: #F8E4BE;
     font-weight: 100;
     grid-area: heading_3;
@@ -30,7 +30,7 @@
 }
 .offer p{
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     line-height: 2.5rem;
     letter-spacing: .1rem;
     grid-area: para;
@@ -40,7 +40,7 @@
     grid-area: image;
 }
 .offer button{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     padding: .5rem 2rem;
     cursor: pointer;
     background-color: #f7e1bb4d;

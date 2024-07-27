@@ -24,7 +24,7 @@ section.hero{
     background-color: #3F2F2A;
 }
 h1{
-    font-size: 8rem;
+    font-size: var(--XX-LARGE);
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -36,7 +36,7 @@ h1{
     padding: 1rem;
 }
 h4{
-    font-size: 1.5rem;
+    font-size: var(--SMALL);
     font-weight: 400;
     color: #DABB9E;
 }
@@ -45,7 +45,7 @@ h4{
     gap: 5rem;
 }
 .buttons button,.hurryupButton{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     padding: .5rem 2rem;
     cursor: pointer;
     background-color: #f7e1bb4d;
@@ -72,7 +72,7 @@ h4{
 .hurryupButton{
     width: fit-content;
     height: fit-content;
-    font-size: .85rem;
+    font-size: var(--XXX-SMALL);
     display: flex;
     align-items: center;
     gap: .25rem;
@@ -82,7 +82,7 @@ h4{
     bottom: 2rem;
 }
 .card p{
-    font-size: 2rem;
+    font-size: var(--MEDIUM);
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 700;

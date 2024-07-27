@@ -32,7 +32,7 @@ nav ul{
     gap: 2.5rem;
 }
 nav ul li{
-    font-size: 1rem;
+    font-size: var(--XX-SMALL);
     list-style: none;
     font-weight: 300;
     cursor: pointer;

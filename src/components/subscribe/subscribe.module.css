@@ -7,7 +7,7 @@
     padding: 3rem;
 }
 .subscribe p{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     color: #F8E4BE;
     text-align: center;
 }
@@ -17,7 +17,7 @@
     position: relative;
 }
 .subscribe #input_field label{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     display: flex;
     gap: .25rem;
     align-items: center;
@@ -35,7 +35,7 @@
 .subscribe #input_field input{
     color: #9D8781;
     caret-color: #9D8781;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     width: 30rem;
     padding: .5rem 1rem;
     background-color: #ffffff;
@@ -49,7 +49,7 @@
     outline: .15rem solid #F7E1BC;
 }
 .subscribe button{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     padding: .5rem 2rem;
     cursor: pointer;
     background-color: #f7e1bb4d;

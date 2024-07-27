@@ -1,5 +1,5 @@
 .services h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     text-align: center;
@@ -17,7 +17,7 @@
     padding: 3rem 0;
     border-radius: 2rem;
     width: 14rem;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
 }
 .services .service_tile_container .service_tile img{
     height: 10rem;

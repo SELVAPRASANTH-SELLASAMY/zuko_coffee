@@ -3,7 +3,7 @@
     place-content: center;
 }
 .menu h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     text-align: center;
@@ -21,7 +21,7 @@
 .menuItems p{
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
-    font-size: 2.5rem;
+    font-size: var(--X-MEDIUM);
     display: inline-flex;
     align-items: center;
     gap: 7rem;
@@ -44,7 +44,7 @@
     bottom: -2.5rem;
 }
 .menuItems p span{
-    font-size: 1.5rem;
+    font-size: var(--SMALL);
 }
 .menuItems p:nth-child(1),.menuItems p:nth-child(7){
     right: -3rem;
@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 .ourMenuButton p{
-    font-size: 1.5rem;
+    font-size: var(--SMALL);
     color: #F8E4BE;
 }
 .ourMenuButton img{

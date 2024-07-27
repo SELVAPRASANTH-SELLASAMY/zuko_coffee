@@ -10,7 +10,7 @@
     height: 25rem;
 }
 .reserveTable h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     position: absolute;
@@ -37,7 +37,7 @@
     position: relative;
 }
 .reserveTable form #input_field label{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     display: flex;
     gap: .25rem;
     align-items: center;
@@ -55,7 +55,7 @@
 .reserveTable form #input_field input{
     color: #9D8781;
     caret-color: #9D8781;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     width: 100%;
     padding: .5rem 1rem;
     background-color: #ffffff;
@@ -74,7 +74,7 @@ input::-webkit-outer-spin-button{
     outline: .15rem solid #F7E1BC;
 }
 .reserveTable button.reserve_button{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     padding: .5rem 2rem;
     cursor: pointer;
     background-color: #f7e1bb4d;

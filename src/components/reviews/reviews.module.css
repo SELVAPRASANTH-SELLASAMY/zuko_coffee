@@ -13,7 +13,7 @@
     border-right: 0;
 }
 .reviews h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     text-align: center;
@@ -57,17 +57,17 @@
 }
 .reviewTile p{
     color: #F0E3D0;
-    font-size: 1.5rem;
+    font-size: var(--SMALL);
     line-height: 2.5rem;
     letter-spacing: .1rem;
 }
 .reviewTile p.feedback{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     text-align: center;
 }
 .reviewTile .rating{
     color: #FFD700;
-    font-size: 2.5rem;
+    font-size: var(--X-MEDIUM);
 }
 .leftArrow,.rightArrow{
     height: 2.5rem;

@@ -1,3 +1,14 @@
+:root{
+    --XX-LARGE : 8rem;
+    --X-LARGE : 4rem;
+    --LARGE : 3rem;
+    --MEDIUM : 2rem;
+    --X-MEDIUM : 2.5rem;
+    --SMALL : 1.5rem;
+    --X-SMALL : 1.25rem;
+    --XX-SMALL : 1rem;
+    --XXX-SMALL : .85rem;
+}
 section,header,footer{
     padding: 1rem 3rem;
 }

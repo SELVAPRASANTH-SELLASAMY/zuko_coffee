@@ -16,7 +16,7 @@ footer img.footerImage{
 }
 footer li{
     list-style: none;
-    font-size: 1rem;
+    font-size: var(--XX-SMALL);
     margin: 1.5rem 0;
     width: fit-content;
 }
@@ -24,7 +24,7 @@ footer li:not(address li){
     cursor: pointer;
 }
 footer p{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
 }
 footer .copyright{
     color: #FEF2DF;
@@ -33,7 +33,7 @@ footer .copyright{
 }
 footer .copyright p{
     text-align: center;
-    font-size: 1rem;
+    font-size: var(--XX-SMALL);
 }
 footer address li{
     font-style: normal;
@@ -51,7 +51,7 @@ footer address li img{
 }
 .socialMedia{
     display: flex;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     position: absolute;
     right: 3rem;
     top: -2.5rem;

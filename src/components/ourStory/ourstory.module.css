@@ -30,7 +30,7 @@
     left: 5rem;
 }
 .storyFrame h2{
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     position: absolute;
@@ -38,7 +38,7 @@
     top: -3rem;
 }
 .storyFrame p{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     color: #ffffff;
     margin-left: 25rem;
     line-height: 2.5rem;
@@ -50,7 +50,7 @@
     overflow: hidden;
 }
 .moreButton{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     background-color: unset;
     border: none;
     color: #ffffff;

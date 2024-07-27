@@ -6,7 +6,7 @@
 .blog h2{
     width: 100%;
     text-align: center;
-    font-size: 4rem;
+    font-size: var(--X-LARGE);
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     position: absolute;
@@ -32,13 +32,13 @@
     scroll-snap-stop: always;
 }
 .blogTile h3{
-    font-size: 1.5rem;
+    font-size: var(--SMALL);
     color: #ffffff;
     font-weight: 100;
     margin: 1rem 0;
 }
 .blogTile p{
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     color: #F6E5DA;
     overflow-y: hidden;
     display: -webkit-box;
@@ -54,7 +54,7 @@
 }
 .blogTile button.moreButton{
     background-color: unset;
-    font-size: 1.25rem;
+    font-size: var(--X-SMALL);
     text-decoration: underline;
     color: #ffffff;
     float: right;
