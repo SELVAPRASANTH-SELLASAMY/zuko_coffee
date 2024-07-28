@@ -11,7 +11,7 @@
 .menuItems{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem 30rem;
+    gap: 5rem 35vw;
     background-image: url('../../assets/mensEnjoyCoffee.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -24,24 +24,29 @@
     font-size: var(--X-MEDIUM);
     display: inline-flex;
     align-items: center;
-    gap: 7rem;
+    gap: 5vw;
     position: relative;
 }
 .menuItems p:nth-child(even){
     flex-direction: row-reverse;
 }
 .menuItems p::after{
-    content: url('../../assets/menuItemStyle.svg');
+    content: '';
     position: absolute;
     width: 100%;
-    bottom: -2.5rem;
+    bottom: -1rem;
     left: -1rem;
+    background-image: url('../../assets/menuItemStyle.svg');
+    width: 100%;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .menuItems p:nth-child(even)::after{
     transform: rotate(180deg);
     left: unset;
     right: -1rem;
-    bottom: -2.5rem;
+    bottom: -1rem;
 }
 .menuItems p span{
     font-size: var(--SMALL);
@@ -64,4 +69,10 @@
 }
 .ourMenuButton img{
     height: 1.25rem;
+}
+
+@media screen and (max-width:769px) {
+    .menuItems{
+        grid-template-columns: 1fr;
+    }
 }

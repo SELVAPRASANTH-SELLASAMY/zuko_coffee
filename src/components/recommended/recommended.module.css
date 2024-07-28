@@ -7,9 +7,11 @@
 }
 .recommendation_container{
     margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    display: flex;
+    overflow-x: auto;
     gap: 3rem;
+    justify-content: space-between;
+    scroll-snap-type: x mandatory;
 }
 span.information{
     font-size: var(--XX-SMALL);
@@ -29,6 +31,12 @@ span.information{
     border-radius: 1.5rem;
     overflow: hidden;
     position: relative;
+    min-width: 335px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.recommendation_container::-webkit-scrollbar{
+    height: 0;
 }
 .recommended_item img.coffeeImage{
     width: 100%;

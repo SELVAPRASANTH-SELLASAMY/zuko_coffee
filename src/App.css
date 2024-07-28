@@ -22,3 +22,12 @@ section{
     border-radius: 50px;
     background-color: #A8715C;
 }
+button,img{
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media screen and (max-width:769px) {
+    :root{
+        --XX-LARGE : 6rem;
+    }
+}

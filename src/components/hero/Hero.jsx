@@ -7,8 +7,10 @@ function Hero(){
     const heroCup = useRef();
     const heroStyleRoot = useRef();
     useEffect(()=>{
-        const navBarWidth = document.querySelector('body').getAttribute('style').slice(-3)+"px";
-        heroStyleRoot.current.style.background = `linear-gradient(to right, transparent calc(100% - ${navBarWidth}),#7C573C ${navBarWidth})`;
+        if(window.innerWidth >= 769){
+            const navBarWidth = document.querySelector('body').getAttribute('style').slice(-3)+"px";
+            heroStyleRoot.current.style.background = `linear-gradient(to right, transparent calc(100% - ${navBarWidth}),#7C573C ${navBarWidth})`;
+        }
     },[]);
     return(
         <>

@@ -4,6 +4,7 @@
     backdrop-filter: blur(2px);
     border-radius: 35px;
     padding: 1.5rem 3rem;
+    gap: 2rem 0;
     display: grid;
     grid-template-areas: "heading_3 image"
                          "para image"
@@ -36,7 +37,8 @@
     grid-area: para;
 }
 .offer img{
-    height: 20rem;
+    /* height: 20rem; */
+    width: 100%;
     grid-area: image;
 }
 .offer button{
@@ -50,4 +52,17 @@
     grid-area: button;
     width: fit-content;
     height: fit-content;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width:769px) {
+    .offerInfo{
+        grid-template-areas: "heading_3"
+                         "para"
+                         "button"
+                         "image";
+    }
+    .offer button{
+        margin-bottom: 0;
+    }
 }

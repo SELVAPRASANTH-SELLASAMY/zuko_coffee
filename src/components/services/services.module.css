@@ -6,9 +6,15 @@
 }
 .services .service_tile_container{
     width: 100%;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    gap: 2.5rem !important;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.services .service_tile_container::-webkit-scrollbar{
+    height: 0;
 }
 .services .service_tile_container .service_tile{
     background-color: #54372A;
@@ -17,7 +23,10 @@
     padding: 3rem 0;
     border-radius: 2rem;
     width: 14rem;
+    min-width: 200px;
     font-size: var(--X-SMALL);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 .services .service_tile_container .service_tile img{
     height: 10rem;

@@ -34,15 +34,18 @@ h1{
     -webkit-text-stroke: transparent;
     -webkit-text-stroke-width: .5rem;
     padding: 1rem;
+    z-index: 2;
 }
 h4{
     font-size: var(--SMALL);
     font-weight: 400;
     color: #DABB9E;
+    z-index: 2;
 }
 .buttons{
     display: flex;
     gap: 5rem;
+    z-index: 2;
 }
 .buttons button,.hurryupButton{
     font-size: var(--X-SMALL);
@@ -65,6 +68,7 @@ h4{
     border-right: none;
     border-bottom: none;
     margin-top: 1rem;
+    z-index: 2;
 }
 .card img:not(.hurryupButton img){
     height: 15rem;
@@ -99,4 +103,15 @@ h4{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+@media screen and (max-width:1024px){
+    .coffeeCupImage{
+        width: 45rem;
+    }
+}
+@media screen and (max-width:769px){
+    .coffeeCupImage{
+        position: relative;
+        width: 100%;
+    }
 }

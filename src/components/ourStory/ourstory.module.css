@@ -13,7 +13,7 @@
 .storyFrame{
     height: fit-content;
     min-width: 100%;
-    background-color: #744F40;
+    background-color: #54372A;
     padding: 3rem;
     border-radius: 1.5rem;
     position: relative;
@@ -24,10 +24,10 @@
     scroll-snap-stop: always;
 }
 .storyFrame img{
-    height: 25rem;
+    height: 22.5rem;
     position: absolute;
     top: -3.5rem;
-    left: 5rem;
+    left: 2.5rem;
 }
 .storyFrame h2{
     font-size: var(--X-LARGE);
@@ -40,13 +40,13 @@
 .storyFrame p{
     font-size: var(--X-SMALL);
     color: #ffffff;
-    margin-left: 25rem;
+    margin-left: 20rem;
     line-height: 2.5rem;
     letter-spacing: .1rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 6;
-    -webkit-line-clamp: 6;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
     overflow: hidden;
 }
 .moreButton{
@@ -72,4 +72,23 @@
 }
 .pageIndicator .circle:first-child{
     background-color: #D7B0A0;
+}
+
+@media screen and (max-width:769px) {
+    .storyFrame p{
+        margin-left: 0;
+    }
+    .storyFrame img{
+        position: static;
+        height: 20rem;
+    }
+    .storyFrame{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .moreButton{
+        align-self: flex-end;
+    }
 }

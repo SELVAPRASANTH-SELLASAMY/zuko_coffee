@@ -38,3 +38,34 @@ nav ul li{
     cursor: pointer;
     color: #FFF8E8;
 }
+.hamburger{
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:769px) {
+    .hamburger{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        right: -15rem;
+        width: 15rem;
+        background-color: #7C573C;
+        height: 100vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 250ms;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 5rem;
+        align-items: center;
+    }
+    .displayNav{
+        right: 0;
+    }
+}

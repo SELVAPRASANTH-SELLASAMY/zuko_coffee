@@ -20,7 +20,6 @@
     top: -3rem;
 }
 .reserveTable form{
-    width: 40%;
     margin: 1rem 0;
     display: grid;
     grid-template-areas: "date date"
@@ -108,4 +107,13 @@ input::-webkit-outer-spin-button{
 }
 .reserveTable form button{
     grid-area: button;
+}
+
+@media screen and (max-width:769px) {
+    .reserveTable{
+        flex-direction: column;
+    }
+    .reserveTable form{
+        gap: 2.5rem 1rem;
+    }
 }

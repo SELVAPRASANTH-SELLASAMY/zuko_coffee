@@ -33,7 +33,7 @@
     height: 0;
 }
 .reviewTile{
-    min-width: 35rem;
+    min-width: 30rem;
     background: #66371dbf;
     backdrop-filter: blur(17.5px);
     display: flex;
