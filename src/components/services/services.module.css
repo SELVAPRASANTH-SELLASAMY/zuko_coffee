@@ -25,7 +25,7 @@
     width: 14rem;
     min-width: 200px;
     font-size: var(--X-SMALL);
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 .services .service_tile_container .service_tile img{

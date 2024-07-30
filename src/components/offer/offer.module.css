@@ -61,6 +61,7 @@
                          "para"
                          "button"
                          "image";
+        padding: 1.5rem 1.5rem;
     }
     .offer button{
         margin-bottom: 0;

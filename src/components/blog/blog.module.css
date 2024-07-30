@@ -50,7 +50,7 @@
 }
 .blogTile img.image{
     height: 4rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
 }
 .blogTile button.moreButton{
     background-color: unset;
@@ -60,7 +60,6 @@
     float: right;
     cursor: pointer;
     border: none;
-    margin: 1rem 0;
     margin-top: 2rem;
 }
 .blogTile .viewMore{
@@ -69,4 +68,14 @@
 }
 .NowrapTile{
     min-width: 100%;
+}
+@media screen and (max-width:769px) {
+    .blogTile{
+        padding: 1rem 1.5rem;
+    }
+}
+@media screen and (max-width:625px){
+    .blogTile{
+        min-width: 100%;
+    }
 }

@@ -3,12 +3,11 @@ import logo from '../../assets/logo.svg';
 import profileIcon from '../../assets/user_profile.svg';
 import cartIcon from '../../assets/cart.svg';
 import hamburderIcon from '../../assets/hamburger.svg';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 const Navbar = ({mainElement}) =>{
     const navBar = useRef();
     const headerElement = useRef();
     const menu = useRef();
-    const [headerColor, setHeaderColor] = useState('transparent');
 
     useEffect(()=>{
         const toggleNav = () => {
@@ -23,24 +22,6 @@ const Navbar = ({mainElement}) =>{
         return ()=>{
             window.removeEventListener('click',toggleNav);
             Window.removeEventListener('click',closeNav);
-        }
-    },[]);
-
-    useEffect(()=>{
-        if(window.innerWidth >= 769){
-            const navBarWidth = parseInt(getComputedStyle(navBar.current).width) + parseInt(getComputedStyle(document.querySelector('header')).paddingRight) * 2;
-            document.querySelector('body').setAttribute('style',`--navbarWidth:${navBarWidth}`);
-            headerElement.current.style.background = `linear-gradient(to right, ${headerColor} calc(100% - ${navBarWidth}px),#7C573C ${navBarWidth}px)`;
-        }
-    },[headerColor]);
-
-    useEffect(()=>{
-        const handleColorChange = () => {
-            window.scrollY >= 80 ? setHeaderColor('#1A1011') : setHeaderColor('transparent');
-        }
-        window.addEventListener('scroll',handleColorChange);
-        return ()=>{
-            window.removeEventListener('scroll',handleColorChange);
         }
     },[]);
 

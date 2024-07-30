@@ -32,6 +32,7 @@ span.information{
     overflow: hidden;
     position: relative;
     min-width: 335px;
+    width: 50%;
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }

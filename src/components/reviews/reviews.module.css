@@ -82,3 +82,27 @@
 .rightArrow{
     right: 2rem;
 }
+@media screen and (max-width:769px) {
+    .reviewTile{
+        min-width: 25rem;
+    }
+    .reviewTile img{
+        height: 5rem;
+    }
+    .reviews{
+        padding: 2.5rem 1rem;
+        margin: 0;
+        margin-bottom: 5rem;
+    }
+    .reviewContainer{
+        gap: 1rem;
+    }
+    .leftArrow,.rightArrow{
+        display: none;
+    }
+}
+@media screen and (max-width:450px){
+    .reviewTile{
+        min-width: 100%;
+    }
+}

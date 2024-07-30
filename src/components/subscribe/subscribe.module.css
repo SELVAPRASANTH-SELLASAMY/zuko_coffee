@@ -12,6 +12,7 @@
     text-align: center;
 }
 .subscribe #input_field{
+    max-width: 480px;
     width: 100%;
     height: fit-content;
     position: relative;
@@ -36,7 +37,7 @@
     color: #9D8781;
     caret-color: #9D8781;
     font-size: var(--X-SMALL);
-    width: 30rem;
+    width: 100%;
     padding: .5rem 1rem;
     background-color: #ffffff;
     border-radius: .5rem;
