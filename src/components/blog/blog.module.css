@@ -2,6 +2,7 @@
     width: 100%;
     position: relative;
     background: #53362A;
+    margin-top: calc(var(--margin) + var(--X-LARGE));
 }
 .blog h2{
     width: 100%;
@@ -10,7 +11,7 @@
     font-family: "Dancing Script", cursive;
     color: #F8E4BE;
     position: absolute;
-    top: -3rem;
+    top: calc(0rem - var(--LARGE));
     left: 0;
 }
 .blogContainer{
@@ -27,7 +28,7 @@
     min-width: 35rem;
     background-color: #997D6C;
     padding: 1rem 2.5rem;
-    border-radius: 1.5rem;
+    border-radius: var(--border-radius);
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }

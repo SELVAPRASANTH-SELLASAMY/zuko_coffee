@@ -21,7 +21,7 @@ function Footer(){
                 <img src={pinterest} alt="pinterest" />
                 <img src={instagram} alt="instagram" />
             </div>
-            <img className={footerStyle.footerImage} src={footerImage} alt="foterImage" />
+            <img className={footerStyle.footerImage} src={footerImage} alt="footerImage" />
             <div className={footerStyle.column}>
                 <p>About</p>
                 <ul>

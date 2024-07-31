@@ -15,7 +15,7 @@
     min-width: 100%;
     background-color: #54372A;
     padding: 3rem;
-    border-radius: 1.5rem;
+    border-radius: var(--border-radius);
     position: relative;
     border: .5rem ridge #54372B;
     border-right: unset;
@@ -35,7 +35,7 @@
     color: #F8E4BE;
     position: absolute;
     right: 3rem;
-    top: -3rem;
+    top: calc(0rem - var(--LARGE));
 }
 .storyFrame p{
     font-size: var(--X-SMALL);
@@ -91,5 +91,10 @@
     }
     .moreButton{
         align-self: flex-end;
+    }
+}
+@media screen and (max-width:426px){
+    .storyFrame img{
+        height: 15rem;
     }
 }

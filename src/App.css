@@ -8,12 +8,23 @@
     --X-SMALL : 1.25rem;
     --XX-SMALL : 1rem;
     --XXX-SMALL : .85rem;
+    --margin : 2rem;
+    --border-radius: 2rem;
 }
 section,header,footer{
     padding: 1rem 3rem;
 }
 section{
-    margin-bottom: 5rem;
+    margin: var(--margin) 0;
+}
+section:first-child{
+    margin-top: 0;
+}
+section:last-child{
+    margin: calc(var(--margin) * 2) 0;
+}
+footer{
+    margin-top: calc(3 * var(--margin));
 }
 ::-webkit-scrollbar{
     width: .5rem;
@@ -33,12 +44,9 @@ button,img{
     section,header,footer{
         padding: 1rem 2rem;
     }
-    section{
-        margin-bottom: 2.5rem;
-    }
 }
 @media screen and (max-width:626px) {
-    :root{
+    /* :root{
     --XX-LARGE : 4rem;
     --X-LARGE : 3rem;
     --LARGE : 2rem;
@@ -48,9 +56,23 @@ button,img{
     --X-SMALL : 1rem;
     --XX-SMALL : 1rem;
     --XXX-SMALL : .85rem;
-}
+} */
+    :root{
+        --XX-LARGE : 4rem;
+        --X-LARGE : 3rem;
+        --LARGE : 2rem;
+        --MEDIUM : 2rem;
+        --X-MEDIUM : 1.5rem;
+        --SMALL : 1.25rem;
+        --X-SMALL : 1rem;
+        --XX-SMALL : 1rem;
+        --XXX-SMALL : .85rem;
+    }
 }
 @media screen and (max-width:426px) {
+    :root{
+        --border-radius: 1rem;
+    }
     section,header,footer{
         padding: 1rem 1rem;
     }

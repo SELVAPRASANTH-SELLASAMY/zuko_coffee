@@ -13,7 +13,7 @@ section.hero{
     position: absolute;
     top: -225px;
     left: -225px;
-    z-index: -1;
+    z-index: 0;
     filter: blur(100px);
 }
 .glow2{
@@ -21,6 +21,7 @@ section.hero{
     width: 1102px;
     top: -551px;
     left: -551px;
+    z-index: -1;
     background-color: #3F2F2A;
 }
 h1{
@@ -71,7 +72,7 @@ h4{
     border: .25rem outset #54372B;
     border-right: none;
     border-bottom: none;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     z-index: 2;
 }
 .card img:not(.hurryupButton img){
@@ -118,21 +119,39 @@ h4{
         position: relative;
         width: 100%;
     }
-    .glow2{
+    .glow1{
         width: 225px;
         height: 225px;
     }
-    .glow1{
+    .glow2{
         width: 550px;
         height: 550px;
     }
 }
+@media screen and (max-width:626px){
+    section.hero{
+        gap: 2rem;
+    }
+}
 @media screen and (max-width:426px){
     .card{
-        width: 100%;
+        width: 20rem;
+        padding: 1rem 0;
+    }
+    .card img:not(.hurryupButton img){
+        height: unset;
+        width: 50%;
+    }
+    .card p{
+        left: 40%;
+        top: calc(45% - 1rem);
     }
     .buttons{
+        max-width: 300px;
         gap: 0;
         justify-content: space-between;
+    }
+    .hurryupButton{
+        bottom: 1rem;
     }
 }

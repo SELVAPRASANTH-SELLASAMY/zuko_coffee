@@ -21,7 +21,7 @@
     color: #F8E4BE;
     text-align: center;
     padding: 3rem 0;
-    border-radius: 2rem;
+    border-radius: var(--border-radius);
     width: 14rem;
     min-width: 200px;
     font-size: var(--X-SMALL);

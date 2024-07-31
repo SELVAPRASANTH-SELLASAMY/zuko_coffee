@@ -75,7 +75,7 @@
     .menuItems{
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         gap: 5rem;
-        padding: 5rem 2rem;
+        padding: 2.5rem 2rem;
     }
     .menu{
         justify-content: stretch;
@@ -84,5 +84,10 @@
 @media screen and (max-width:708px){
     .menuItems{
         gap: 1rem 5rem;
+    }
+}
+@media screen and (max-width:625px){
+    .menuItems{
+        gap: 2.5rem 5rem;
     }
 }

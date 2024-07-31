@@ -28,7 +28,7 @@ span.information{
 }
 .recommended_item{
     background: #ad714a59;
-    border-radius: 1.5rem;
+    border-radius: var(--border-radius);
     overflow: hidden;
     position: relative;
     min-width: 335px;
