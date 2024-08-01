@@ -18,7 +18,7 @@ function OurStory(){
 
     return(
         <>
-        <section className={ourStoryStyle.OurStory}>
+        <section id='home' className={ourStoryStyle.OurStory}>
             <div id='moreContentsContainer' className={ourStoryStyle.storyContainer}>
                 {
                     contentArray.map((obj)=>(

@@ -46,7 +46,7 @@ function Footer(){
                     <li>Limitation Of Liability</li>
                 </ul>
             </div>
-            <address className={footerStyle.column}>
+            <address id='contact' className={footerStyle.column}>
                 <ul>
                     <li>
                         <span><img src={locationIcon} alt="location" /></span> 12 jhon Avenue #35 - new York

@@ -32,11 +32,14 @@ nav ul{
     gap: 2.5rem;
 }
 nav ul li{
-    font-size: var(--XX-SMALL);
     list-style: none;
+}
+nav ul li a{
+    font-size: var(--XX-SMALL);
     font-weight: 300;
     cursor: pointer;
     color: #FFF8E8;
+    text-decoration: none;
 }
 .hamburger{
     height: 2rem;
@@ -66,6 +69,17 @@ nav ul li{
         flex-direction: column;
         margin-top: 5rem;
         align-items: center;
+        gap: 0;
+    }
+    nav ul li{
+        display: flex;
+        width: 90%;
+    }
+    nav ul li a{
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        border-radius: .5rem;
     }
     .displayNav{
         right: 0;

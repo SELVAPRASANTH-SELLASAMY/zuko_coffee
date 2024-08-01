@@ -35,7 +35,7 @@ function Services(){
     ]
     return(
         <>
-        <section className={serviceStyle.services}>
+        <section id='services' className={serviceStyle.services}>
             <h2>Services</h2>
             <div className={serviceStyle.service_tile_container}>
                 {

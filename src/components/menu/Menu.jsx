@@ -38,7 +38,7 @@ function Menu(){
 
     return(
         <>
-        <section className={menuStyle.menu}>
+        <section id='menu' className={menuStyle.menu}>
             <h2>Popular Menu</h2>
             <div className={menuStyle.menuItems}>
                 {

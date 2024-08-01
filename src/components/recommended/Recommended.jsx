@@ -25,7 +25,7 @@ function Recommended(){
 
     return(
         <>
-        <section className={recommendedStyle.recommended}>
+        <section id='product' className={recommendedStyle.recommended}>
             <h2>Recommended</h2>
             <div className={recommendedStyle.recommendation_container}>
                 {

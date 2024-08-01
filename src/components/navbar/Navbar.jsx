@@ -46,12 +46,12 @@ const Navbar = () =>{
             <img ref={menu} className={NavStyle.hamburger} src={hamburderIcon} alt="hamburger" />
             <nav ref={navBar}>
                 <ul>
-                    <li>Home</li>
-                    <li>Menu</li>
-                    <li>Services</li>
-                    <li>Product</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

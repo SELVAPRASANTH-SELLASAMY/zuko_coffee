@@ -24,7 +24,7 @@ function Blog(){
 
     return(
         <>
-        <section className={blogStyle.blog}>
+        <section id='blog' className={blogStyle.blog}>
             <h2>Our Blog</h2>
             <div className={blogStyle.blogContainer}>
                 {
