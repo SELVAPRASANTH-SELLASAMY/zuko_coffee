@@ -25,13 +25,15 @@
     height: 0;
 }
 .blogTile{
-    font-size: var(--X-SMALL);
     min-width: 35rem;
     background-color: #997D6C;
     padding: 1rem 2.5rem;
     border-radius: var(--border-radius);
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .blogTile h3{
     font-size: var(--SMALL);
@@ -53,16 +55,18 @@
 .blogTile img.image{
     height: 4rem;
     margin-top: 1rem;
+    width: fit-content;
 }
 .blogTile button.moreButton{
     background-color: unset;
     font-size: var(--X-SMALL);
     text-decoration: underline;
     color: #ffffff;
-    float: right;
     cursor: pointer;
     border: none;
-    margin-top: 2rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
 }
 .blogTile .viewMore{
     width: 100%;
