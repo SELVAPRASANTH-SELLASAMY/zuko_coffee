@@ -56,6 +56,8 @@ nav ul li{
         right: -15rem;
         width: 15rem;
         background-color: #7C573C;
+        background: linear-gradient(to right, transparent calc(100% - 585px),#7C573C 585px);
+        backdrop-filter: blur(10px);
         height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: 250ms;

@@ -1,9 +1,7 @@
-import { useRef } from 'react';
 import './App.css';
 import { Navbar, Hero, OurStory, Services, Offer, ReserveTable, Recommended, Menu, Blog, Reviews, Subscribe, Footer } from './components';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 function App() {
-  const mainElement = useRef();
   return (
     <HelmetProvider>
       <div className="App">
@@ -13,8 +11,8 @@ function App() {
           <meta name='keywords' content="zuko coffee, UI development, ReactJS, Selvaprasanth's project, landing page for coffee shop"/>
           <meta name='author' content='Selvaprasanth'/>
         </Helmet>
-        <Navbar mainElement={mainElement}/>
-        <main ref={mainElement}>
+        <Navbar/>
+        <main>
           <Hero/>
           <OurStory/>
           <Services/>

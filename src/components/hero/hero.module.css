@@ -4,6 +4,7 @@ section.hero{
     flex-direction: column;
     gap: 2.5rem;
     position: relative;
+    background: linear-gradient(to right, transparent calc(100% - 585px),#7C573C 585px);
 }
 .glow1,.glow2{
     height: 450px;

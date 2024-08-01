@@ -3,27 +3,37 @@ import logo from '../../assets/logo.svg';
 import profileIcon from '../../assets/user_profile.svg';
 import cartIcon from '../../assets/cart.svg';
 import hamburderIcon from '../../assets/hamburger.svg';
-import { useEffect, useRef } from "react";
-const Navbar = ({mainElement}) =>{
+import { useEffect, useRef, useState } from "react";
+const Navbar = () =>{
     const navBar = useRef();
     const headerElement = useRef();
     const menu = useRef();
+    const [headerColor,setHeaderColor] = useState('transparent');
 
     useEffect(()=>{
-        const toggleNav = () => {
-            navBar.current.classList.toggle(NavStyle.displayNav);
+        const handleColorChange = () => {
+            window.scrollY > 150 ? setHeaderColor('#3F2F2A') : setHeaderColor('transparent');
         }
-        const closeNav = () => {
-            navBar.current.classList.remove(NavStyle.displayNav);
-        }
-        menu.current.addEventListener('click',toggleNav);
-        mainElement && mainElement.current.addEventListener('click',closeNav);
-        navBar.current.addEventListener('click',closeNav);
+        headerElement.current.style.background = `linear-gradient(to right, ${headerColor} calc(100% - 585px),#7C573C 585px)`;
+        window.addEventListener('scroll',handleColorChange);
         return ()=>{
-            window.removeEventListener('click',toggleNav);
-            Window.removeEventListener('click',closeNav);
+            window.removeEventListener('scroll',handleColorChange);
         }
-    },[]);
+    },[headerColor]);
+
+    useEffect(()=>{
+        const navbar = navBar.current;
+        const menubar = menu.current;
+        const toggleMenubar = () => {
+            navbar.classList.toggle(NavStyle.displayNav);
+        }
+        menubar.addEventListener('click',toggleMenubar);
+        navbar.addEventListener('click',toggleMenubar);
+        return ()=>{
+            menubar.removeEventListener('click',toggleMenubar);
+            navbar.removeEventListener('click',toggleMenubar);
+        }
+    },[])
 
     return(
         <>
