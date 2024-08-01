@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/zuko_coffee/static/css/main.28dde0f5.css",
+    "main.css": "/zuko_coffee/static/css/main.8ea17a21.css",
     "main.js": "/zuko_coffee/static/js/main.910e2fb8.js",
     "static/media/coffee_cup.svg": "/zuko_coffee/static/media/coffee_cup.544528ff53d884f0cc07d49b6ec14251.svg",
     "static/media/customer_review_background.svg": "/zuko_coffee/static/media/customer_review_background.ef5c8d8ea82a78ef666f.svg",
@@ -49,11 +49,11 @@
     "static/media/email.svg": "/zuko_coffee/static/media/email.cefdf75827e51647d1c47b7cb26299e1.svg",
     "static/media/mdi_arrow.svg": "/zuko_coffee/static/media/mdi_arrow.974e0230695c69af282564333716a532.svg",
     "static/media/hamburger.svg": "/zuko_coffee/static/media/hamburger.4cb94860cf9c82cc0e2b52dc6976160e.svg",
-    "main.28dde0f5.css.map": "/zuko_coffee/static/css/main.28dde0f5.css.map",
+    "main.8ea17a21.css.map": "/zuko_coffee/static/css/main.8ea17a21.css.map",
     "main.910e2fb8.js.map": "/zuko_coffee/static/js/main.910e2fb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.28dde0f5.css",
+    "static/css/main.8ea17a21.css",
     "static/js/main.910e2fb8.js"
   ]
 }
