@@ -1,4 +1,5 @@
 footer{
+    font-size: var(--XX-SMALL);
     background-color: #533529;
     /* height: 25rem; */
     position: relative;

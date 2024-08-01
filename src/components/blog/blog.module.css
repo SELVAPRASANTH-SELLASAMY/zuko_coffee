@@ -25,6 +25,7 @@
     height: 0;
 }
 .blogTile{
+    font-size: var(--X-SMALL);
     min-width: 35rem;
     background-color: #997D6C;
     padding: 1rem 2.5rem;
