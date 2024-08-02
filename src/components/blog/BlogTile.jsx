@@ -6,7 +6,7 @@ function BlogTile({heading, content, image}){
     const viewFullContent = () => {
         blogContent.current.classList.toggle(blogStyle.viewMore);
         blgTile.current.classList.toggle(blogStyle.NowrapTile);
-        blgTile.current.scrollIntoView();
+        blgTile.current.scrollIntoView({block:"center"});
     }
     return(
         <>
