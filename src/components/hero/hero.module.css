@@ -116,6 +116,9 @@ h4{
     }
 }
 @media screen and (max-width:769px){
+    section.hero{
+        background: linear-gradient(to right, transparent calc(100% - 585px),#7C573C 1200px);
+    }
     .coffeeCupImage{
         position: relative;
         width: 100%;
