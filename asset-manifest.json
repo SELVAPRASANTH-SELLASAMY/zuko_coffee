@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zuko_coffee/static/css/main.c8516ad0.css",
-    "main.js": "/zuko_coffee/static/js/main.29af4b1f.js",
+    "main.js": "/zuko_coffee/static/js/main.7656b880.js",
     "static/media/coffee_cup.svg": "/zuko_coffee/static/media/coffee_cup.544528ff53d884f0cc07d49b6ec14251.svg",
     "static/media/customer_review_background.svg": "/zuko_coffee/static/media/customer_review_background.ef5c8d8ea82a78ef666f.svg",
     "static/media/item2.svg": "/zuko_coffee/static/media/item2.776351402910211a0f882f804a5fe3f2.svg",
@@ -14,7 +14,7 @@
     "static/media/Proefpakket.svg": "/zuko_coffee/static/media/Proefpakket.d5a0ab7cf3cd3dbf63d73cf201536072.svg",
     "static/media/Footer_Img.svg": "/zuko_coffee/static/media/Footer_Img.fdd5971e35bdd3bc9f4e1bff98d0b47d.svg",
     "static/media/avatar1.svg": "/zuko_coffee/static/media/avatar1.ab239a00d255fece23ea8545e6bf77c9.svg",
-    "static/media/logo.svg": "/zuko_coffee/static/media/logo.ac725bd2a24e97fa0726d4eb64fadd32.svg",
+    "static/media/logo.svg": "/zuko_coffee/static/media/logo.c50285c209fa66a05cfee7879484a901.svg",
     "static/media/Image-ourstory.svg": "/zuko_coffee/static/media/Image-ourstory.e717f50c44b34ea2612ef0da32e7681c.svg",
     "static/media/avatar2.svg": "/zuko_coffee/static/media/avatar2.e47fbbd0e640a00bd68b2aa3f42d0bde.svg",
     "static/media/ingredient_group.svg": "/zuko_coffee/static/media/ingredient_group.c48ec232474314530e8ca75b72782db2.svg",
@@ -50,10 +50,10 @@
     "static/media/mdi_arrow.svg": "/zuko_coffee/static/media/mdi_arrow.974e0230695c69af282564333716a532.svg",
     "static/media/hamburger.svg": "/zuko_coffee/static/media/hamburger.4cb94860cf9c82cc0e2b52dc6976160e.svg",
     "main.c8516ad0.css.map": "/zuko_coffee/static/css/main.c8516ad0.css.map",
-    "main.29af4b1f.js.map": "/zuko_coffee/static/js/main.29af4b1f.js.map"
+    "main.7656b880.js.map": "/zuko_coffee/static/js/main.7656b880.js.map"
   },
   "entrypoints": [
     "static/css/main.c8516ad0.css",
-    "static/js/main.29af4b1f.js"
+    "static/js/main.7656b880.js"
   ]
 }
