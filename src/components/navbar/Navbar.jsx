@@ -12,7 +12,7 @@ const Navbar = () =>{
 
     useEffect(()=>{
         const handleColorChange = () => {
-            window.scrollY > 150 ? setHeaderColor('#533529') : setHeaderColor('transparent');
+            window.scrollY > 50 ? setHeaderColor('#533529') : setHeaderColor('transparent');
         }
         headerElement.current.style.background = `linear-gradient(to right, ${headerColor} calc(100% - 585px),#7C573C ${window.innerWidth >= 769 ? 585 : 1200}px)`;
         window.addEventListener('scroll',handleColorChange);

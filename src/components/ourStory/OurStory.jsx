@@ -31,8 +31,8 @@ function OurStory(){
         pages[0].classList.add(ourStoryStyle.pageActive);
         const handlePage = () => {
             const PageNumber = Math.floor(storyContainerCopy.scrollLeft / storyContainerCopy.offsetWidth);
-            pages[PageNumber].classList.add(ourStoryStyle.pageActive);
             pages[currentPage].classList.remove(ourStoryStyle.pageActive);
+            pages[PageNumber].classList.add(ourStoryStyle.pageActive);
             currentPage = PageNumber;
         }
         storyContainerCopy.addEventListener('scrollend',handlePage);
