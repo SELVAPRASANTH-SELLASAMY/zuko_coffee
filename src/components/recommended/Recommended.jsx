@@ -43,12 +43,12 @@ function Recommended(){
     const ItemsContainer = useRef();
     const leftscrollButton = useRef();
     const rightscrollButton = useRef();
-    const maxScroll = useRef(0);
+    const maxScrollCount = useRef(0);
     const [scrollCount,setScrollCount] = useState(0);
 
     useEffect(()=>{
         const maxScrollRight = Math.floor(ItemsContainer.current.offsetWidth / (recommededItem.current.offsetWidth + Number(getComputedStyle(ItemsContainer.current).gap.slice(0,-2))));
-        maxScroll.current = recommendedItemsArray.length - maxScrollRight;
+        maxScrollCount.current = recommendedItemsArray.length - (maxScrollRight ? maxScrollRight : 1);
     },[recommendedItemsArray.length]);
 
     const scrollLeft = () => {
@@ -65,7 +65,7 @@ function Recommended(){
 
     useEffect(()=>{
         leftscrollButton.current.style.display = scrollCount ? 'flex' : 'none';
-        rightscrollButton.current.style.display = scrollCount >= maxScroll.current ? 'none' : 'flex';
+        rightscrollButton.current.style.display = scrollCount >= maxScrollCount.current ? 'none' : 'flex';
     },[scrollCount]);
 
     return(
