@@ -50,8 +50,20 @@ function Reviews(){
                 }
                 reviewContainer.current.scrollBy({left:(scrollWidth+gap),behavior:'smooth'});
             }
-            const interval = setInterval(scroll,[2500]);
-            return () => clearInterval(interval);
+            var interval;
+            const intervalSet = () => {
+                interval = setInterval(scroll,[2500]);
+            }
+            const intervalClear = () => {
+                clearInterval(interval);
+            }
+            window.addEventListener('scroll',intervalClear);
+            window.addEventListener('scrollend',intervalSet);
+            return () => {
+                clearInterval(interval);
+                window.removeEventListener('scroll',intervalClear);
+                window.removeEventListener('scrollend',intervalSet);
+            }
         }
     },[scrollWidth,customerReviewArray.length]);
 
