@@ -26,7 +26,8 @@
     margin-top: 1rem;
     gap: 2.5rem;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    /* scroll-snap-type: x mandatory; */
+    pointer-events: none;
 }
 .reviewContainer::-webkit-scrollbar{
     height: 0;
@@ -44,8 +45,8 @@
     border: .25rem outset #A8715C;
     border-right: 0;
     border-bottom: 0;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: center;
+    scroll-snap-stop: always; */
     position: relative;
 }
 .reviewTile img{

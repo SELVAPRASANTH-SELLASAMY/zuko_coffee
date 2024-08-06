@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import reviewStyle from './reviews.module.css';
-function ReviewTile({customerReviewArray}){
+function ReviewTile({customerReviewArray,setScrollWidth}){
     const {rating} = customerReviewArray;
     const stars = useMemo(() => {
         const rated = Array.from({length:Number(rating)},(_,index)=>(
@@ -12,9 +12,14 @@ function ReviewTile({customerReviewArray}){
         return [...rated,...unRated];
     },[rating]);
 
+    const reviewTile = useRef();
+    useEffect(()=>{
+        setScrollWidth(reviewTile.current.offsetWidth);
+    },[setScrollWidth]);
+
     return(
         <>
-        <div className={reviewStyle.reviewTile}>
+        <div ref={reviewTile} className={reviewStyle.reviewTile}>
             <img src={customerReviewArray.image} alt="avatar" />
             <p className={reviewStyle.name}>{customerReviewArray.clientName}</p>
             <p className={reviewStyle.designation}>{customerReviewArray.designation}</p>

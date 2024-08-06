@@ -4,6 +4,7 @@ import avatar2 from '../../assets/avatar2.svg';
 import avatar3 from '../../assets/avatar3.svg';
 import ReviewTile from './ReviewTile';
 import navArrow from '../../assets/rightArrow.svg';
+import { useEffect, useRef, useState } from 'react';
 function Reviews(){
     const customerReviewArray = [
         {
@@ -29,16 +30,41 @@ function Reviews(){
         }
     ];
 
+    const reviewContainer = useRef();
+    const copy = customerReviewArray.copyWithin();
+    customerReviewArray.push(...copy);
+
+    const [scrollWidth,setScrollWidth] = useState(0);
+    
+    useEffect(()=>{
+        if(scrollWidth){
+            const gap = Number(getComputedStyle(reviewContainer.current).gap.slice(0,-2));
+            var maxScroll = 0;
+            const scroll = () => {
+                if(maxScroll >= ((customerReviewArray.length / 2) * (scrollWidth + gap))){
+                    reviewContainer.current.scrollTo({left:0,behavior:'instant'});
+                    maxScroll = (scrollWidth+gap);
+                }
+                else{
+                    maxScroll += (scrollWidth+gap);
+                }
+                reviewContainer.current.scrollBy({left:(scrollWidth+gap),behavior:'smooth'});
+            }
+            const interval = setInterval(scroll,[2500]);
+            return () => clearInterval(interval);
+        }
+    },[scrollWidth,customerReviewArray.length]);
+
     return(
         <>
         <section className={reviewStyle.reviews}>
             <h2>Customer Review</h2>
             <img className={reviewStyle.leftArrow} src={navArrow} alt="leftArrow" />
             <img className={reviewStyle.rightArrow} src={navArrow} alt="rightArrow" />
-            <div className={reviewStyle.reviewContainer}>
+            <div ref={reviewContainer} className={reviewStyle.reviewContainer}>
                 {
                     customerReviewArray.map((info,index)=>(
-                        <ReviewTile key={index} customerReviewArray={customerReviewArray[index]}/>
+                        <ReviewTile setScrollWidth={setScrollWidth} key={index} customerReviewArray={customerReviewArray[index]}/>
                     ))
                 }
             </div>
