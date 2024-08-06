@@ -64,6 +64,7 @@ nav ul li a{
         height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: 250ms;
+        border-radius: 1rem 0 0 1rem;
     }
     nav ul{
         flex-direction: column;
