@@ -2,84 +2,79 @@ import reviewStyle from './reviews.module.css';
 import avatar1 from '../../assets/avatar1.svg';
 import avatar2 from '../../assets/avatar2.svg';
 import avatar3 from '../../assets/avatar3.svg';
+import avatar4 from '../../assets/png/scarlet.jpg';
+import avatar5 from '../../assets/png/steve_rogers.jpg';
+import avatar6 from '../../assets/png/chris_hamsworth.jpg';
 import ReviewTile from './ReviewTile';
-import navArrow from '../../assets/rightArrow.svg';
-import { useEffect, useRef, useState } from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
+import './customswiper.css';
+import 'swiper/css/pagination';
 function Reviews(){
     const customerReviewArray = [
         {
             clientName : "Taylor",
-            designation : "Student",
             rating : "4",
             feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
             image : avatar1
         },
         {
             clientName : "Steve Rogers",
-            designation : "Software Engineer",
             rating : "5",
+            feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
+            image : avatar5
+        },
+        {
+            clientName : "Wanda",
+            rating : "4",
+            feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
+            image : avatar3
+        },
+        {
+            clientName : "Chris Evons",
+            rating : "4",
             feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
             image : avatar2
         },
         {
-            clientName : "Wanda",
-            designation : "Business Women",
+            clientName : "Scarlet Johnson",
+            rating : "5",
+            feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
+            image : avatar4
+        },
+        {
+            clientName : "Chris Hamsworth",
             rating : "4",
             feedback : "I love spending my downtime in a cozy coffee shop, surrounded by the sweet aroma of freshly brewed drinks and pastries.",
-            image : avatar3
+            image : avatar6
         }
     ];
-
-    const reviewContainer = useRef();
-    const copy = customerReviewArray.copyWithin();
-    customerReviewArray.push(...copy);
-
-    const [scrollWidth,setScrollWidth] = useState(0);
-    
-    useEffect(()=>{
-        if(scrollWidth){
-            const gap = Number(getComputedStyle(reviewContainer.current).gap.slice(0,-2));
-            var maxScroll = 0;
-            const scroll = () => {
-                if(maxScroll >= ((customerReviewArray.length / 2) * (scrollWidth + gap))){
-                    reviewContainer.current.scrollTo({left:0,behavior:'instant'});
-                    maxScroll = (scrollWidth+gap);
-                }
-                else{
-                    maxScroll += (scrollWidth+gap);
-                }
-                reviewContainer.current.scrollBy({left:(scrollWidth+gap),behavior:'smooth'});
-            }
-            var interval;
-            const intervalSet = () => {
-                interval = setInterval(scroll,[2500]);
-            }
-            const intervalClear = () => {
-                clearInterval(interval);
-            }
-            window.addEventListener('scroll',intervalClear);
-            window.addEventListener('scrollend',intervalSet);
-            return () => {
-                clearInterval(interval);
-                window.removeEventListener('scroll',intervalClear);
-                window.removeEventListener('scrollend',intervalSet);
-            }
-        }
-    },[scrollWidth,customerReviewArray.length]);
 
     return(
         <>
         <section className={reviewStyle.reviews}>
             <h2>Customer Review</h2>
-            <img className={reviewStyle.leftArrow} src={navArrow} alt="leftArrow" />
-            <img className={reviewStyle.rightArrow} src={navArrow} alt="rightArrow" />
-            <div ref={reviewContainer} className={reviewStyle.reviewContainer}>
+            <Swiper
+                modules={[Navigation,Pagination,Autoplay]}
+                spaceBetween={50}
+                slidesPerView={'auto'}
+                navigation
+                pagination={{ clickable: false }}
+                autoplay
+                loop
+                centeredSlides
+            >
                 {
                     customerReviewArray.map((info,index)=>(
-                        <ReviewTile setScrollWidth={setScrollWidth} key={index} customerReviewArray={customerReviewArray[index]}/>
+                        <SwiperSlide key={index}>
+                            <ReviewTile customerReviewArray={customerReviewArray[index]}/>
+                        </SwiperSlide>
                     ))
                 }
-            </div>
+            </Swiper>
         </section>
         </>
     );
